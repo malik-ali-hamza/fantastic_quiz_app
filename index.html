@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME SCREEN -->
+<div id="homeScreen" class="full-screen full-bg">
+
+    <!-- BOX 1 -->
+    <div class="box title-box">
+        <h1>Welcome to My Portfolio</h1>
+    </div>
+
+    <!-- BOX 2 -->
+    <div class="box desc-box">
+        <p class="description">
+            Hi, I am a Computer Engineering student.
+            Explore my work and test your knowledge with my responsive quiz app!
+        </p>
+    </div>
+
+    <!-- BOX 3 -->
+    <div class="box start-box">
+        <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+</div>
+
+<!-- QUIZ SCREEN -->
+<div id="quizScreen" class="quiz-container full-bg" style="display:none;">
+    <h2 id="questionText"></h2>
+    <div id="options"></div>
+    <p id="feedback"></p>
+    <button id="nextBtn" class="next-btn" onclick="nextQuestion()">Next</button>
+</div>
+
+<!-- RESULT SCREEN -->
+<div id="resultScreen" class="quiz-container full-bg" style="display:none;"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
