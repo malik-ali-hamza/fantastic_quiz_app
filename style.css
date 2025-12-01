@@ -11,52 +11,17 @@ body, html {
   font-family: Arial, sans-serif;
   background: royalblue;
 }
+.full-bg { min-height: 100vh; width: 100%; display: flex; 
+          justify-content: center; align-items: center; flex-direction: column; 
+          background: linear-gradient(to right, #1e3c72, #2a5298);
+          transition: background 0.3s ease; color: white; text-align: center; } /* Card Boxes */
+.box { width: 80%; max-width: 700px; background: rgba(255,255,255,0.1);
+      padding: 25px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.2); backdrop-filter: blur(5px); } /* Title */ 
+.title-box h1 { font-size: 2.5rem; margin: 0; } /* Description */
+.desc-box p { font-size: 1.2rem; line-height: 1.5; } /* Start Button */ 
+.start-btn { padding: 12px 25px; font-size: 1.2rem; 
+            background: #00ff88; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; }
 
-/* FULL SCREEN SECTIONS */
-.full-bg { min-height: 100vh; 
-          width: 100%; display: flex; justify-content: center;
-          align-items: center; flex-direction: column; background: royalblue; 
-          transition: background 0.3s ease; color: white;
-          padding: 20px; text-align: center; }
-
-/* Card Box */
-.box {
-  width: 90%;
-  max-width: 700px;
-  background: royalblue;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.4);
-  backdrop-filter: blur(6px);
-}
-
-/* Title */
-.title-box h1 {
-  font-size: 2.6rem;
-  margin-bottom: 10px;
-}
-
-/* Description */
-.desc-box p {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  opacity: 0.9;
-}
-
-/* Start Button */
-.start-btn {
-  margin-top: 20px;
-  padding: 12px 28px;
-  font-size: 1.25rem;
-  background: red;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  color:black;
-  box-shadow: 0 0 10px rgba(50,205,50,0.6);
-  transition: 0.3s;
-}
 .start-btn:hover {
   background: green;
   transform: scale(1.05);
