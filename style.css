@@ -1,12 +1,17 @@
 /* RESET */
-body, html {
+/* RESET */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
   height: 100%;
   font-family: Arial, sans-serif;
 }
 
-/* FULL SCREEN HOME PAGE AND OTHER SCREENS */
+/* FULL SCREEN SECTIONS */
 .full-bg {
     min-height: 100vh;
     width: 100%;
@@ -14,95 +19,109 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, navy, royalblue);
     transition: background 0.3s ease;
     color: white;
+    padding: 20px;
     text-align: center;
 }
 
-/* Card Boxes */
+/* Card Box */
 .box {
-  width: 80%;
+  width: 90%;
   max-width: 700px;
-  background: rgba(255,255,255,0.1);
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  backdrop-filter: blur(5px);
+  background: rgba(255,255,255,0.2);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
 }
 
 /* Title */
 .title-box h1 {
-  font-size: 2.5rem;
-  margin: 0;
+  font-size: 2.6rem;
+  margin-bottom: 10px;
 }
 
 /* Description */
 .desc-box p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 /* Start Button */
 .start-btn {
-  padding: 12px 25px;
-  font-size: 1.2rem;
-  background: #00ff88;
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 1.25rem;
+  background: lime;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
+  color:black;
+  box-shadow: 0 0 10px rgba(50,205,50,0.6);
   transition: 0.3s;
 }
 .start-btn:hover {
-  background: #00cc6e;
-}
-
-/* COLOR CHANGE ON WINDOW RESIZE */
-@media (max-width: 700px) {
-  .full-bg {
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-  }
-}
-@media (max-width: 400px) {
-  .full-bg {
-    background: linear-gradient(to right, #ff512f, #dd2476);
-  }
+  background: green;
+  transform: scale(1.05);
 }
 
 /* QUIZ CONTAINER */
 .quiz-container {
   width: 90%;
   max-width: 700px;
-  margin: auto;
-  margin-top: 50px;
-  padding: 20px;
+  margin: 50px auto;
+  padding: 25px;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 14px;
   color: white;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
+/* OPTIONS */
 .option-btn {
   width: 100%;
-  padding: 12px;
-  margin: 8px 0;
+  padding: 14px;
+  margin: 10px 0;
   background: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.25s;
 }
 
+.option-btn:hover {
+  background: whitesmoke;
+  transform: scale(1.02);
+}
+
+/* NEXT BUTTON */
 .next-btn {
-  padding: 10px 20px;
+  padding: 12px 22px;
   margin-top: 15px;
   display: none;
-  font-size: 1rem;
-  background: #FFD700;
+  font-size: 1.1rem;
+  background: gold;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
+  color: black;
+  transition: 0.3s;
 }
+
+.next-btn:hover {
+  background: goldenrod;
+}
+
+@media(max-width:1200px){body{background-color:navy;}}
+@media(max-width:1000px){body{background-color:brown;}}
+@media(max-width:800px){body{background-color:lightcoral;}}
+@media(max-width:600px){body{background-color:yellow;}}
+
