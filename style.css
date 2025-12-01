@@ -19,7 +19,7 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(135deg, navy, royalblue);
+    background: royalblue;
     transition: background 0.3s ease;
     color: white;
     padding: 20px;
@@ -30,7 +30,7 @@ body, html {
 .box {
   width: 90%;
   max-width: 700px;
-  background: rgba(255,255,255,0.2);
+  background: royalblue;
   padding: 30px;
   border-radius: 14px;
   box-shadow: 0 4px 25px rgba(0,0,0,0.4);
@@ -55,7 +55,7 @@ body, html {
   margin-top: 20px;
   padding: 12px 28px;
   font-size: 1.25rem;
-  background: lime;
+  background: red;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -77,7 +77,7 @@ body, html {
   padding: 25px;
   text-align: center;
   border-radius: 14px;
-  color: white;
+  color: royalblue;
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
@@ -88,7 +88,7 @@ body, html {
   width: 100%;
   padding: 14px;
   margin: 10px 0;
-  background: white;
+  background: royalblue;
   border: none;
   border-radius: 8px;
   cursor: pointer;
